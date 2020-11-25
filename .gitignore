@@ -1,0 +1,7 @@
+keys.py
+pyvenv.cfg
+__pycache__
+.vscode
+Include/
+Lib/
+Scripts/
