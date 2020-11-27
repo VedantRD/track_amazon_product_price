@@ -4,8 +4,6 @@ from bs4 import BeautifulSoup
 import smtplib
 import time
 
-print(email, password)
-
 URL = 'https://www.amazon.in/Targus-KB55-Multi-Platform-Bluetooth-Keyboard/dp/B07C7VCTJH/ref=sr_1_5?dchild=1&keywords=bluetooth+keyboard&qid=1606309738&sr=8-5'
 
 headers = {
@@ -39,7 +37,7 @@ def sendEmail(price):
     msg = f'Subject:{subject}\n\n{body}'
 
     server.sendmail(
-        'vedant.debadwar50@gmail.com',
+        email,
         'vedant.debadwar@gmail.com',
         msg
     )
